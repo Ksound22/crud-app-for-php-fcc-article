@@ -63,6 +63,6 @@ Before you begin, ensure you have the following installed on your machine:
 - `create.php`: The page to create a new movie.
 - `update.php`: The page to update an existing movie.
 - `delete.php`: The page to delete a movie.
-- `mongodb.php`: MongoDB connection setup.
+- `mongo_atlas_setup.php`: MongoDB connection setup.
 - `.env`: Environment variables (not included in the repository).
 - `vendor/`: Composer dependencies (not included in the repository).
