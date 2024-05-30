@@ -9,10 +9,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
   ];
   $result = $movies->insertOne($newMovie);
   if ($result->getInsertedCount() === 1) {
-    echo "Movie created successfully!";
+    // echo "Movie created successfully!";
     header('Location: ' . '/');
   } else {
-    echo "Failed to create movie.";
+    echo "Failed to create movie";
   }
 }
 ?>
