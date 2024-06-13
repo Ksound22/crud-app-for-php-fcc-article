@@ -4,7 +4,7 @@ require_once __DIR__ . '/vendor/autoload.php';
 require_once __DIR__ . '/mongo_atlas_setup.php';
 
 $movies_list = getMongoCollection('movie_list', 'movies');
-$movies = $movies_list->find();
+$movies = $movies_list->find([], ['sort' => ['_id' => -1]]);
 ?>
 
 <!DOCTYPE html>

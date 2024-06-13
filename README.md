@@ -25,19 +25,7 @@ Before you begin, ensure you have the following installed on your machine:
    cd movie-list-crud-app
    ```
 
-2. **Install Dependencies**
-
-   ```bash
-   composer install
-   ```
-
-3. **Create a `.env` File Off the Existing `.env.example` File in the ROot**
-
-   ```bash
-   cp .env.example .env
-   ```
-
-4. **Ensure MongoDB extension is Enabled**
+2. **Ensure MongoDB extension is Enabled**
 
    Make sure the MongoDB PHP extension is installed and enabled. You can install it using PECL:
 
@@ -49,6 +37,26 @@ Before you begin, ensure you have the following installed on your machine:
 
    ```bash
    extension=mongodb.so
+   ```
+
+3. **Install Dependencies**
+
+   ```bash
+   composer install
+   ```
+
+4. **Create a `.env` File Off the Existing `.env.example` File in the Root and add your Atlas URI, A.K.A Connection String**
+
+   Create .env file
+
+   ```bash
+   cp .env.example .env
+   ```
+
+   Add your Mongo URI
+
+   ```bash
+   MDB_URI="mongodb atlas connection string"
    ```
 
 5. **Start the PHP Built-in Server**
